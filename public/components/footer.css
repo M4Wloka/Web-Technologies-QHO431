@@ -1,0 +1,37 @@
+body{
+    margin:0;
+    overflow-x:hidden}
+.footer{
+    background:#000;
+    padding:14px 0;
+    text-align:center
+}
+.footer .row{
+    color: #fff;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+    font-size:.6em;
+    padding:.5% 0;
+    width:100%}
+    
+@media (max-width:720px) {
+.footer{
+    padding:5%;
+    text-align:left
+}
+.footer .row ul li{
+    display:block;
+    margin:10px 0;
+    text-align:left
+}
+.footer .row a i{
+    margin:0 3%
+}
+}

@@ -1,0 +1,48 @@
+/* -------------------------------------------------------------------------- */
+/*                                form wrapper                                */
+/* -------------------------------------------------------------------------- */
+.form-c { 
+  max-width: 350px; 
+  margin: 25px auto 0; 
+  z-index: 1;
+}
+
+
+.input-feedback {
+  color: var(--dark-green);
+  width: 100%;
+  font-weight: 450;
+  font-size: 20px;
+  border-radius: 6px;
+  line-height: 18px;
+  border: 3px solid var(--yellow);
+  transition: all .4s;
+  padding: 16px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+}
+
+.input-feedback:focus { border: 3px solid var(--yellow); }
+
+.resize-container-comment {
+  height: 165px;
+  line-height: 166%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  background: var(--yellow);
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--dark-green);
+  font-size: 22px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  transition: all .4s;
+  margin-top: -6px;
+  font-weight: 600;
+}
+
+
+[type="submit"]:hover { background: var(--bright-green); }

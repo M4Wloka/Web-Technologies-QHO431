@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./components/contact-style.css">
+    <link rel="stylesheet" href="./components/style.css"> 
+</head>
+<body>
+    
+<section id="Contact" class="positioning-bg">
+    <!-- ----------------------------- background ------------------------------ -->
+    <video src="./multimedia/video/contact.mp4" muted loop autoplay></video> 
+    <div class="video-filter"></div>
+  <!-- -------------------------------- form --------------------------------- -->
+    <form id="commentForm" action="/Filled-form" method="POST" class="form-c" onsubmit="return validateForm()">      
+      <input id="nameInput" name="name" type="text" class="input-feedback" placeholder="Full Name" required>   
+      <input id="emailInput" name="email" type="email" class="input-feedback" placeholder="Email" required>
+      <textarea id="commentInput" name="comment" class="input-feedback resize-container-comment" placeholder="Comment" required></textarea>
+      <input type="submit" value="SUBMIT">
+  </form>
+</section>
+<script src="/validation-contact.js"></script>
+    
+</body>
+</html>

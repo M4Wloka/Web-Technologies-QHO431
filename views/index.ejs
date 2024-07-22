@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Groove Fest</title>
+</head>
+<body>
+  <%- include('./partial/navbar.ejs'); %>
+  <!-- ----------- passing information from server to home - text ------------ -->
+  <%- include('./partial/Home.ejs', { q1_hero, q2_hero, q3_hero, q4_hero, q5_hero}); %>
+  <!-- ------------------ passing artists to line up - text ------------------ -->
+  <%- include('./partial/Line-Up', { art1, art2, art3, art4, art5, art6, arti1, arti2, arti3, arti4, arti5, arti6}); %>
+  <!-- ----------- passing subititles, titles of the phots to area ----------- -->
+  <%- include('./partial/Area.ejs', { photo_title_1, photo_title_2, photo_title_3, photo_title_4, photo_sub_1, photo_sub_2, photo_sub_3, photo_sub_4, area_text_1, area_text_2, area_text_3 }); %>
+  <!-- -------------- passing the questions and anwsers to FAQ --------------- -->
+  <%- include('./partial/FAQ.ejs'), {faq_question_1, faq_question_2, faq_question_3, faq_question_4, faq_question_5, faq_question_6, faq_answer_1, faq_answer_2, faq_answer_3, faq_answer_4, faq_answer_5, faq_answer_6 } %>
+  <%- include('./partial/Contact.ejs'); %>
+  <%- include('./partial/Footer.ejs'); %>
+</body>
+</html>

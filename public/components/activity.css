@@ -1,0 +1,122 @@
+:root {
+  --yellow: #e1f00f;
+  --dark-green: #0d130b;
+  --bright-green: #0bca54;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.activity-section {
+  background-color: var(--dark-green);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  text-align: center;
+  color: var(--yellow);
+}
+
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.come-back {
+  background: var(--yellow);
+  color: var(--dark-green);
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-top: 20px; /* Adjust spacing as needed */
+  padding: 10px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.come-back:hover {
+  letter-spacing: 7px;
+}
+
+/* background */
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  background-color: var(--light-green);
+}
+/* score */
+#score {
+  text-align: center;
+  font-size: 24px;
+}
+
+/* activity window / background  */
+#activity {
+  width: 80vw;
+  height: 40vh; 
+  border: 3px solid var(--yellow);
+  margin: auto;
+  background-image: url("../multimedia/img/background_avtivity.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+/* main character  */
+#van {
+  height: 20vh; 
+  width: 20vh;
+  top: calc(100% - 15vh); 
+  left: -2vw; 
+  position: absolute;
+  background-image: url("../multimedia/img/van-activity.png");
+  background-size: cover;
+}
+
+/* obstacle */
+#guitar {
+  width: 15vh; 
+  height: 15vh;
+  position: absolute;
+  top: calc(100% - 15vh); 
+  left: calc(100% - 15vh); 
+  background-image: url("../multimedia/img/guitar-activity.png");
+  background-size: cover;
+  animation: guitar-move 1.33s infinite linear;
+}
+
+@keyframes guitar-move  {
+  0% { left: calc(100% - 15vh); } 
+  100% { left: -15vh; }
+}
+
+/* jump animation  */
+.move-up {
+  animation: jump 0.5s;
+}
+ /* start, highest, van down, initial position  */
+@keyframes jump {
+  0% { top: calc(100% - 20vh); }
+  50% { top: calc(100% - 40vh); }
+  75% { top: calc(100% - 35vh); }
+  100% { top: calc(100% - 20vh); }
+}
+
